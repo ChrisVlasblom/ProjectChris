@@ -3,9 +3,247 @@
   <head>
     <meta charset="utf-8">
     <title>Project Chris</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
   </head>
-  
+
   <body>
+
+    <!-- Banner -->
+
+    <div class="banner">
+      <p class="banner-hi">Hi, I'm Chris Vlasblom</p>
+      <p class="banner-welcome">Welcome to my website</p>
+      <p class="banner-button"><a href="#aboutme">Get to know me!</a></p>
+    </div>
+
+    <!-- Navigation bar -->
+
+    <div id="myHeader" class="header">
+
+      <div class="header-section">
+        <p>Chris Vlasblom</p>
+
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+<div class="content">
+
+    <!-- About me -->
+
+    <div id="aboutme" class="aboutme">
+
+      <p class="aboutme-title">About me<p>
+      <div class="aboutme-container">
+
+      <p>My name is Chris Vlasblom and I'm 21 years old.
+      I have completed the bachelor Industrial Design
+      Engineering at TU Delft, and I'm currently occupied
+      with the master Integrated Product Design, which I
+      hope to complete in 2020. I'm familiar with (among others)
+       Photoshop and SolidWorks. Some of my hobbies are working out,
+       going to music festivals and practising basic webdesign
+       (I built this website myself with html, css and javascript from scratch!)
+      </p>
+
+      <img src="resources/images/10.jpeg" alt="">
+
+      </div>
+
+    </div>
+
+    <!-- Education -->
+
+    <div id="education" class="relative-top education">
+
+      <p class="section-title">Education</p>
+      <p>Here is a small text about my education.</p>
+
+      <div class="education-all">
+
+        <div class="education-indiv">
+          <img src="./resources/images/io.jpg" alt="">
+          <p class="education-uppertext">Bachelor Industrial Design Engineering</p>
+          <p class="education-middletext"><a title="Go to TU Delft website" href="https://www.tudelft.nl">Technical University of Delft</a></p>
+          <p class="education-lowertext">September 2015 - November 2018 (completed)</p>
+        </div>
+
+        <div class="education-indiv">
+          <img src="./resources/images/farel.jpg" alt="">
+          <p class="education-uppertext">Bilangual pre-university education</p>
+          <p class="education-middletext"><a title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
+          <p class="education-lowertext">September 2009 - May 2015 (completed)</p>
+        </div>
+
+        <div class="education-indiv">
+          <img src="./resources/images/farel.jpg" alt="">
+          <p class="education-uppertext">International Baccalaureate higher level</p>
+          <p class="education-middletext"><a title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
+          <p class="education-lowertext">September 2009 - May 2015 (completed)</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Projects -->
+
+    <div id="projects" class="relative-top projects">
+
+      <p class="section-title">Projects</p>
+
+      <p>During my first three years of the bachelor Industrial Design Engineering
+      I have done several projects, listed below.</p>
+
+      <div class="projects-all">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <div class="project-indiv">
+
+          <div class="project-description">
+            <p>Here I will write something about the project</p>
+          </div>
+          <div class="project-images">
+
+            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <!-- the modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="project-indiv">
+
+          <div class="project-description">
+            <p>Here I will write something about the project</p>
+          </div>
+          <div class="project-images">
+
+            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <!-- the modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <script>
+      // // Get the modal
+      // var modal = document.getElementById('myModal');
+      //
+      // // Get the image and insert it inside the modal - use its "alt" text as a caption
+      // var img = document.getElementsByClassName('myImg')[0];
+      // var modalImg = document.getElementById("img01");
+      // var captionText = document.getElementById("caption");
+      // img.onclick = function(){
+      //   modal.style.display = "block";
+      //   modalImg.src = this.src;
+      //   captionText.innerHTML = this.alt;
+      // }
+      //
+      // // Get the <span> element that closes the modal
+      // var span = document.getElementsByClassName("close")[0];
+      //
+      // // When the user clicks on <span> (x), close the modal
+      // span.onclick = function() {
+      //   modal.style.display = "none";
+      // }
+
+      // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+      </script>
+
+    </div>
+
+    <!-- Contact section -->
+
+    <div id="contact" class="relative-top contact">
+      <p class="h1-layout">Contact me</p>
+      <p>T: +31611162698</p>
+      <p>E: chris.vlasblom@upcmail.nl</p>
+      <p><a title="Go to my LinkedIn page" href="https://www.linkedin.com/in/cvlasblom">LinkedIn</a></p>
+      <p><a title="Go to my Facebook page" href="https://www.facebook.com/chris.vlasblom">Facebook</a></p>
+    </div>
+
+  </div>
+
+  <script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the header
+  var header = document.getElementById("myHeader");
+
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+
 
   </body>
 </html>

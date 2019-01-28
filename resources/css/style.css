@@ -1,0 +1,377 @@
+
+/* Don't forget these
+
+rgb(226,220,224)
+
+alles is p. dus maak classes met h1layout etc
+
+spelen met opacity
+
+fotos groter bij hover of click?
+
+links openen in nieuw tabblad
+
+alt text for images
+
+facebook en linkedin icons
+
+
+
+*/
+
+
+/* General Rules */
+
+body{
+  margin: 0px;
+}
+html{
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* .relative-top{
+  position: relative;
+  top: 89px;
+} */
+
+.h1-layout{
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.h2-layout{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.h3-layout{
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.section-title{
+  text-align: center;
+  padding: 16px 0px 0px;
+  font-size: 2.5rem;
+  font-weight: 750;
+}
+
+
+/* Banner */
+
+.banner{
+  height: 550px;
+  background-color: rgb(226,220,224);
+  margin-top: 100px;
+}
+
+.banner-hi{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-top: 100px;
+}
+
+.banner-welcome{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 250;
+}
+
+.banner-button{
+  padding: 16px;
+  margin: 16px auto;
+  text-align: center;
+  background-color: rgb(128,128,128);
+  width: 15%;
+}
+
+.banner-button:hover{
+  font-weight: bold;
+  color: white;
+  background-color: rgb(51,51,51);
+}
+
+/* Navigation Bar */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  width: 100%;
+  /* position: fixed; */
+  bottom: 0px;
+  z-index: 2;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+.sticky{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.header .header-section{
+  display: flex;
+  margin-left: 32px;
+}
+
+.header nav{
+  display: flex;
+  flex-direction: row;
+  margin-right: 32px;
+}
+
+.header li{
+  display: inline-flex;
+  margin-left: 32px;
+}
+
+.sticky + .content{
+  padding-top: 100px;
+}
+
+/* About me */
+
+.aboutme-title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.aboutme-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.aboutme-container p{
+  text-align: justify;
+  display: flex;
+  padding: 0px 16px;
+  margin: 0px;
+}
+
+.aboutme-container img{
+  width: 50%;
+}
+
+/* Education */
+
+.education{
+  background-color: rgb(226,220,224);
+  margin: 0px 16px 96px;
+}
+
+.education p{
+  text-align: center;
+}
+
+.education-all{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+
+.education-indiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  background-color: white;
+  margin: 16px;
+}
+
+.education-indiv img{
+  width: 100%;
+  height: 40%;
+}
+
+.education-uppertext{
+  font-size: 1.2rem;
+  font-weight: 1000;
+  margin: 16px;
+}
+
+.education-middletext{
+  font-size: 0.75rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 8px 16px;
+}
+
+.education-lowertext{
+  font-size: 0.5rem
+  font-weight: lighter;
+  margin: 8px 0px 32px 16px;
+}
+
+/* Projects */
+
+.projects{
+    border-top: solid 3px rgb(226,220,224);
+    border-left: solid 3px rgb(226,220,224);
+    border-right: solid 3px rgb(226,220,224);
+    margin: 16px 16px 0px;
+}
+
+.projects p{
+  text-align: center;
+}
+
+.projects-all{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 16px;
+  border-top: solid 3px rgb(226,220,224);
+}
+
+.project-indiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 16px;
+  border-bottom: solid 3px rgb(226,220,224);
+  flex-wrap: nowrap;
+}
+
+.project-description{
+  display: flex;
+  width: 100%;
+  /* border: solid 3px rgb(226,220,224); */
+  padding: 0px 16px;
+  background-color: rgb(226,220,224);
+}
+
+.project-description p{
+  text-align: left;
+}
+
+.project-images{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: solid 3px rgb(226,220,224); */
+  padding: 16px;
+}
+
+.projects img{
+  padding-right: 48px;
+  padding-bottom: 16px;
+}
+
+.myImg{
+  cursor: pointer;
+  transition: 0.3s;
+}
+myImg:hover{
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 120px;
+  right: 380px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Contact */
+
+.contact{
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: rgb(226,220,224);
+
+}
