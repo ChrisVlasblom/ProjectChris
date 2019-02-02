@@ -1,19 +1,19 @@
 
 /* Don't forget these
 
-rgb(226,220,224)
 
 alles is p. dus maak classes met h1layout etc
 
-spelen met opacity
-
-fotos groter bij hover of click?
 
 links openen in nieuw tabblad
 
 alt text for images
 
 facebook en linkedin icons
+
+paddings en margins overal gelijk
+
+margin zijkanten
 
 
 
@@ -64,7 +64,7 @@ a:hover{
 
 .section-title{
   text-align: center;
-  padding: 16px 0px 0px;
+  padding: 36px 0px 0px;
   font-size: 2.5rem;
   font-weight: 750;
 }
@@ -74,7 +74,7 @@ a:hover{
 
 .banner{
   height: 550px;
-  background-color: rgb(226,220,224);
+  background-color: rgb(166,184,196,0.4);
   margin-top: 100px;
 }
 
@@ -101,8 +101,7 @@ a:hover{
 
 .banner-button:hover{
   font-weight: bold;
-  color: white;
-  background-color: rgb(51,51,51);
+  background-color: rgb(100,100,100);
 }
 
 /* Navigation Bar */
@@ -150,6 +149,11 @@ a:hover{
 
 /* About me */
 
+#aboutme{
+  /* border:2px solid rgb(166,184,196); */
+  margin: 96px 48px 0px;
+}
+
 .aboutme-title{
   text-align: center;
   font-size: 2.5rem;
@@ -169,17 +173,21 @@ a:hover{
   display: flex;
   padding: 0px 16px;
   margin: 0px;
+  line-height: 4;
+  border-left: 2px solid rgb(166,184,196);
+
 }
 
 .aboutme-container img{
-  width: 50%;
+  width: 40%;
 }
 
 /* Education */
 
 .education{
-  background-color: rgb(226,220,224);
-  margin: 0px 16px 96px;
+  /* border: 2px solid rgb(166,184,196); */
+  margin: 96px 48px 0px;
+  background-color: rgb(166,184,196,0.2);
 }
 
 .education p{
@@ -189,10 +197,10 @@ a:hover{
 .education-all{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-bottom: 32px;
+
 }
 
 .education-indiv{
@@ -202,12 +210,18 @@ a:hover{
   align-items: flex-start;
   width: 30%;
   background-color: white;
-  margin: 16px;
+  padding-bottom: 0px;
+  margin-bottom: 100px;
 }
 
 .education-indiv img{
   width: 100%;
   height: 40%;
+  transition: 0.5s;
+}
+
+.education-indiv img:hover{
+  opacity: 0.7;
 }
 
 .education-uppertext{
@@ -232,14 +246,13 @@ a:hover{
 /* Projects */
 
 .projects{
-    border-top: solid 3px rgb(226,220,224);
-    border-left: solid 3px rgb(226,220,224);
-    border-right: solid 3px rgb(226,220,224);
-    margin: 16px 16px 0px;
+    /* border: solid 3px rgb(166,184,196); */
+    margin: 96px 48px 0px;
 }
 
 .projects p{
   text-align: center;
+
 }
 
 .projects-all{
@@ -247,8 +260,8 @@ a:hover{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 0px 16px;
-  border-top: solid 3px rgb(226,220,224);
+  /* margin: 0px 16px; */
+
 }
 
 .project-indiv{
@@ -256,34 +269,54 @@ a:hover{
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  margin: 16px;
-  border-bottom: solid 3px rgb(226,220,224);
-  flex-wrap: nowrap;
+  /* margin: 16px; */
+  /* border: solid 3px rgb(166,184,196); */
+  height: 100%;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  border: 2px solid rgb(166,184,196);
+  padding-left: 16px;
 }
 
 .project-description{
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   /* border: solid 3px rgb(226,220,224); */
-  padding: 0px 16px;
-  background-color: rgb(226,220,224);
+  /* background-color: rgb(166,184,196); */
+  width: 50%;
 }
 
 .project-description p{
   text-align: left;
 }
 
+.project-uppertext{
+  font-size: 1.2rem;
+  font-weight: 1000;
+}
+
+.project-lowertext{
+  font-size: 0.5rem
+  font-weight: lighter;
+}
+
 .project-images{
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   /* border: solid 3px rgb(226,220,224); */
-  padding: 16px;
+  width: 50%;
+  /* padding: 16px; */
 }
 
-.projects img{
-  padding-right: 48px;
-  padding-bottom: 16px;
+.projectimg-right{
+  padding: 36px 72px 36px 0px;
+}
+
+.projectimg-left{
+  padding: 36px 72px 36px 0px;
 }
 
 .myImg{
@@ -313,19 +346,20 @@ myImg:hover{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 35%;
   max-width: 700px;
 }
 
 /* Caption of Modal Image */
 #caption {
+  font-size: 1.5rem;
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
+  padding: 5px 0;
   height: 150px;
 }
 
@@ -370,8 +404,8 @@ myImg:hover{
 
 .contact{
   text-align: center;
-  padding-top: 96px;
+  padding-top: 48px;
   padding-bottom: 96px;
-  background-color: rgb(226,220,224);
-
+  background-color: rgb(166,184,196,0.4);
+  margin-top: 96px;
 }

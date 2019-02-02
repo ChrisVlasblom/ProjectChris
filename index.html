@@ -18,7 +18,7 @@
     <div class="banner">
       <p class="banner-hi">Hi, I'm Chris Vlasblom</p>
       <p class="banner-welcome">Welcome to my website</p>
-      <p class="banner-button"><a href="#aboutme">Get to know me!</a></p>
+      <a href="#aboutme"><p class="banner-button">Get to know me!</p></a>
     </div>
 
     <!-- Navigation bar -->
@@ -32,9 +32,9 @@
 
       <nav>
         <ul>
-          <li><a href="#aboutme">About me</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#refaboutme">About me</a></li>
+          <li><a href="#refeducation">Education</a></li>
+          <li><a href="#refprojects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -44,10 +44,13 @@
 <div class="content">
 
     <!-- About me -->
+    <div id="refaboutme">
+
+    </div>
 
     <div id="aboutme" class="aboutme">
 
-      <p class="aboutme-title">About me<p>
+      <p class="section-title">About me<p>
       <div class="aboutme-container">
 
       <p>My name is Chris Vlasblom and I'm 21 years old.
@@ -55,44 +58,46 @@
       Engineering at TU Delft, and I'm currently occupied
       with the master Integrated Product Design, which I
       hope to complete in 2020. I'm familiar with (among others)
-       Photoshop and SolidWorks. Some of my hobbies are working out,
+       Photoshop and SolidWorks. Some of my hobbies are doing sports,
        going to music festivals and practising basic webdesign
-       (I built this website myself with html, css and javascript from scratch!)
+       (I built this website myself with html and css from scratch!)
       </p>
 
-      <img src="resources/images/10.jpeg" alt="">
+      <img src="resources/images/me4.jpg" alt="A picture of me">
 
       </div>
 
     </div>
 
     <!-- Education -->
+    <div id="refeducation">
+
+    </div>
 
     <div id="education" class="relative-top education">
 
       <p class="section-title">Education</p>
-      <p>Here is a small text about my education.</p>
 
       <div class="education-all">
 
         <div class="education-indiv">
-          <img src="./resources/images/io.jpg" alt="">
+          <a href="https://www.tudelft.nl" target="_blank"><img src="./resources/images/io.jpg" alt="Faculty of IDE" title="Go to TU Delft Website" target="_blank"></a>
           <p class="education-uppertext">Bachelor Industrial Design Engineering</p>
-          <p class="education-middletext"><a title="Go to TU Delft website" href="https://www.tudelft.nl">Technical University of Delft</a></p>
+          <p class="education-middletext"><a target="_blank" title="Go to TU Delft website" href="https://www.tudelft.nl">Technical University of Delft</a></p>
           <p class="education-lowertext">September 2015 - November 2018 (completed)</p>
         </div>
 
         <div class="education-indiv">
-          <img src="./resources/images/farel.jpg" alt="">
-          <p class="education-uppertext">Bilangual pre-university education</p>
-          <p class="education-middletext"><a title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
+          <a href="https://www.farelcollege.nl" target="_blank"><img src="./resources/images/farel.jpg" alt="Farel College Ridderkerk" title="Go to Farel College website" target="_blank"></a>
+          <p class="education-uppertext">International Baccalaureate higher level</p>
+          <p class="education-middletext"><a target="_blank" title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
           <p class="education-lowertext">September 2009 - May 2015 (completed)</p>
         </div>
 
         <div class="education-indiv">
-          <img src="./resources/images/farel.jpg" alt="">
-          <p class="education-uppertext">International Baccalaureate higher level</p>
-          <p class="education-middletext"><a title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
+          <a href="https://www.farelcollege.nl" target="_blank"><img src="./resources/images/farel.jpg" alt="Farel College Ridderkerk" title="Go to Farel College website" target="_blank"></a>
+          <p class="education-uppertext">Bilangual pre-university education</p>
+          <p class="education-middletext"><a target="_blank" title="Go to Farel college website" href="https://www.farelcollege.nl">Farel College Ridderkerk</a></p>
           <p class="education-lowertext">September 2009 - May 2015 (completed)</p>
         </div>
 
@@ -101,6 +106,9 @@
     </div>
 
     <!-- Projects -->
+    <div id="refprojects">
+
+    </div>
 
     <div id="projects" class="relative-top projects">
 
@@ -114,11 +122,16 @@
         <div class="project-indiv">
 
           <div class="project-description">
-            <p>Here I will write something about the project</p>
+            <p class="project-uppertext">Bachelor End Project</p>
+            <p class="project-lowertext">This individual project was aimed at designing an outdoor cooking device
+            to be used in a limited outdoor space. </p>
+            <p>In collaboration with </p>
+            <img src="./resources/images/tefallogo.png" alt="" width="30%">
           </div>
+
           <div class="project-images">
 
-            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <img class="myImg projectimg-left" src="./resources/images/tefal7.jpg" alt="A SolidWorks render of my design for Tefal." title="Click to enlarge" style="width:30%">
             <!-- the modal -->
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
@@ -126,7 +139,7 @@
               <div id="caption"></div>
             </div>
 
-            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <img class="myImg projectimg-right" src="./resources/images/tefal8.jpg" alt="A SolidWorks render of the exploded view of my design." title="Click to enlarge" style="width:30%">
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-content" id="img01">
@@ -140,11 +153,15 @@
         <div class="project-indiv">
 
           <div class="project-description">
-            <p>Here I will write something about the project</p>
+            <p class="project-uppertext">Minor Sport Innovation</p>
+            <p class="project-lowertext">In a multidisciplinary team we were asked to design a system
+            and method to measure the stiffness of the 'upper' of a sport shoe.</p>
+            <p>In collaboration with</p>
+            <img src="./resources/images/adidaslogo.png" alt="Adidas Logo" width="15%">
           </div>
           <div class="project-images">
 
-            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <img class="myImg projectimg-left" src="./resources/images/adidas1.jpg" alt="A SolidWorks render of our design for Adidas." title="Click to enlarge" style="width:30%">
             <!-- the modal -->
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
@@ -152,7 +169,7 @@
               <div id="caption"></div>
             </div>
 
-            <img class="myImg" src="./resources/images/10.jpeg" alt="Img description" style="width:30%">
+            <img class="myImg projectimg-right" src="./resources/images/adidas2.jpg" alt="A picture of our (functioning) device." title="Click to enlarge" style="width:30%">
             <div id="myModal" class="modal">
               <span class="close">&times;</span>
               <img class="modal-content" id="img01">
@@ -160,9 +177,7 @@
             </div>
 
           </div>
-
         </div>
-
       </div>
 
       <script>
@@ -218,8 +233,8 @@ span.onclick = function() {
       <p class="h1-layout">Contact me</p>
       <p>T: +31611162698</p>
       <p>E: chris.vlasblom@upcmail.nl</p>
-      <p><a title="Go to my LinkedIn page" href="https://www.linkedin.com/in/cvlasblom">LinkedIn</a></p>
-      <p><a title="Go to my Facebook page" href="https://www.facebook.com/chris.vlasblom">Facebook</a></p>
+      <p><a target="_blank" title="Go to my LinkedIn page" href="https://www.linkedin.com/in/cvlasblom">LinkedIn</a></p>
+      <p><a target="_blank" title="Go to my Facebook page" href="https://www.facebook.com/chris.vlasblom">Facebook</a></p>
     </div>
 
   </div>
